@@ -1,0 +1,23 @@
+.projects-container{
+    background-color: #e5d3b3;
+    height: 150vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.projects{
+    height: 100px;
+}
+
+.project-heading{
+    margin-top: 115px;
+}
+
+.projects-card-container{
+}

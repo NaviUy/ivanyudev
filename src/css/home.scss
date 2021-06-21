@@ -1,0 +1,163 @@
+.home-container{
+    background-color: #e5d3b3;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.landing-photo {
+    object-fit: cover;
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+    object-position: -150px 0px;
+}
+
+.landing-text {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.landing-paragraph {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 300px;
+}
+
+.spacer{
+    height: 115px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.landing-arrow {
+    justify-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-arrow a{
+    text-decoration: none;
+    color: black;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    animation: arrow-animation 1.5s infinite ease;
+}
+
+.landing-down-arrow-text{
+    margin: 0;
+    padding: 0;
+    font-size: .8rem;
+}
+
+.arrow-down-alignment {
+ display: flex;
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-text-big-screen {
+    display: none;
+    font-weight: bold;
+}
+
+@keyframes arrow-animation {
+    0%{
+        transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .spacer{
+        height: 200px;
+    }
+
+
+}
+
+@media screen and (min-width: 780px) {
+    .spacer{
+        height: 250px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container{
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 100px;
+    }
+
+    .heading-text-big-screen {
+        display: inline-block;
+        justify-self: flex-start;
+        align-self: flex-start;
+        margin-bottom: 80px;
+        font-size: 3rem;
+    }
+
+    .landing-photo {
+        object-fit: cover;
+        height: 500px;
+        width: 400px;
+        border-radius: 5px;
+        object-position: -170px 0px;
+    }
+
+    .heading-text-container{
+        display: flex;
+    }
+}
+
+
+
