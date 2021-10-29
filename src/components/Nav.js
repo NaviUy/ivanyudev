@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import '../css/nav.scss'
 import { Link } from 'react-scroll'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faNpm, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import logo from '../images/cute-logo.png'
 
 function Nav(){
@@ -79,11 +80,6 @@ function Nav(){
                         smooth={true}
                         offset={0}
                         duration={500}>Contact</Link>
-                    {/* <li><a href="/">Home</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Resume</a></li>
-                    <li><a href="/">Photography</a></li>
-                    <li><a href="/">Contact</a></li> */}
                 </ul>
             </div>
             </div>
@@ -91,11 +87,6 @@ function Nav(){
         <div className="menu-container" style={toggle}>
             <div className="x-button" onClick={() => toggleHandler()}>X</div>
             <ul className="nav-list">
-                {/* <li><a href="/">Home</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Resume</a></li>
-                <li><a href="/">Photography</a></li>
-                <li><a href="/">Contact</a></li> */}
                 <Link
                     activeClass="active"
                     to="home"
@@ -128,6 +119,17 @@ function Nav(){
                     offset={0}
                     duration={500}
                     onClick={() => toggleHandler()}>Contact</Link>
+                <div className="social-media-container">
+                    <a href="https://github.com/NaviUy">
+                        <FontAwesomeIcon className="social-icon" icon={faGithub} size="sm" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/ivan-yu-bb9215149/">
+                        <FontAwesomeIcon className="social-icon" icon={faLinkedinIn} size="sm" />
+                    </a>
+                    <a href="https://www.npmjs.com/~naviuy">
+                        <FontAwesomeIcon className="social-icon" icon={faNpm} size="sm" />
+                    </a>
+                </div>
             </ul>
         </div>
 

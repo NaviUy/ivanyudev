@@ -6,7 +6,6 @@ import { Link } from 'react-scroll'
 
 function Home(){
 
-    //handle parallax
     window.addEventListener('scroll', () => handleScroll())
 
     function handleScroll(){
@@ -15,18 +14,14 @@ function Home(){
         let scrolled = window.pageYOffset;
         let rate = 70 / scrolled;
 
-        // console.log(targets)
         if(window.innerWidth < 540)
         for(let target of targets){
-            // console.log("smaller")
             target.style.opacity = rate
             if(target.style.objectPosition !== undefined){target.style.objectPosition = "-150px " + ((0 - scrolled) * 2) + "px"}
-            // console.log(target)
         }
 
         if(window.innerWidth > 540){
             for(let target of targets){
-                // console.log("bigger")
                 target.style.opacity = rate
 
                 if(target.style.objectPosition !== undefined){target.style.objectPosition = "-170px " + ((0 - scrolled) * 2) + "px"}
@@ -38,7 +33,6 @@ function Home(){
 
     return(
         <div className="home-container" id="home">
-            {/* <h1 className="home-heading"> this is the home page </h1> */}
             <div className="spacer"></div>
             <div className="heading-text-container">
                     <h1 className="heading-text-big-screen scroll">Hi, I'm Ivan!</h1>
