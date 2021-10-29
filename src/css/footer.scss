@@ -1,0 +1,36 @@
+.footer-container {
+  height: 15vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.social-media-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.social-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+}
+
+.social-icon:hover {
+  color: orange;
+}
+
+.footer-note {
+  text-align: center;
+}
+
+@media screen and (min-width: 780px) {
+  .footer-container {
+    height: 10vh;
+  }
+}

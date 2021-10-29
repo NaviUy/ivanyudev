@@ -25,8 +25,25 @@ function Nav(){
         <>
         <div className="container-bar">
             <div className="navigation-bar">
-                <a href="/"><img className="logo" src={logo} alt="logo"/></a>
-                <h1 className="logo-text"><a href="/">IVAN YU</a></h1>
+                <Link
+                    activeClass="active"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}>
+                    <img className="logo" src={logo} alt="logo"/>
+                </Link>
+                <Link
+                    className="logo-a"
+                    activeClass="active"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}>
+                        <h1 className="logo-text">IVAN YU</h1>
+                    </Link>
                 <div className="hamburger-container" onClick={() => toggleHandler()}>
                     <div className="hamburger"></div>
                     <div className="hamburger"></div>
@@ -41,13 +58,27 @@ function Nav(){
                         smooth={true}
                         offset={0}
                         duration={500}>Home</Link>
-                                            <Link
+                    <Link
                         activeClass="active"
                         to="projects"
                         spy={true}
                         smooth={true}
                         offset={0}
                         duration={500}>Projects</Link>
+                    <Link
+                        activeClass="active"
+                        to="resume"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}>Resume</Link>
+                    <Link
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}>Contact</Link>
                     {/* <li><a href="/">Home</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="/">Resume</a></li>
@@ -81,6 +112,22 @@ function Nav(){
                     offset={0}
                     duration={500}
                     onClick={() => toggleHandler()}>Projects</Link>
+                <Link
+                    activeClass="active"
+                    to="resume"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    onClick={() => toggleHandler()}>Resume</Link>
+                <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    onClick={() => toggleHandler()}>Contact</Link>
             </ul>
         </div>
 

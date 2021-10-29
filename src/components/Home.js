@@ -59,11 +59,9 @@ function Home(){
                     offset={0}
                     duration={500}>
                     <p className="landing-down-arrow-text">Check out some of my projects.</p>
-                    <a href="/">
                         <div className="arrow-down-alignment">
                             <i className="arrow down"/>
                         </div>
-                    </a>
                 </Link>
             </div>
         </div>

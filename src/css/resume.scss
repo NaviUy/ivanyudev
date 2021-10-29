@@ -1,0 +1,48 @@
+.resume-container {
+  height: 100vh;
+  background-color: #c0b298;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 100px;
+}
+
+.resume-heading {
+  margin-top: 115px;
+  margin-bottom: 40px;
+}
+
+.document-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.download {
+  margin-top: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 24px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.download:hover {
+  color: white;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}

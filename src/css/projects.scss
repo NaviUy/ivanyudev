@@ -1,23 +1,135 @@
-.projects-container{
-    background-color: #e5d3b3;
-    height: 150vh;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
+.projects-container {
+  background-color: #dbcaab;
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 100px;
 }
 
-.projects{
-    height: 100px;
+.project-card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 100%;
 }
 
-.project-heading{
-    margin-top: 115px;
+.projects {
+  height: 100px;
 }
 
-.projects-card-container{
+.project-heading {
+  margin-top: 115px;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 18rem;
+  flex-grow: 1;
+  margin-bottom: 15px;
+  max-height: 400px;
+}
+
+.link-holder {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.a-container {
+  z-index: 0;
+  margin-top: 20px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.all-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.single-card-title {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.single-card-description {
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-icon {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  margin-top: 0.5em;
+}
+
+.project-icon:hover {
+  color: white;
+}
+
+.demo {
+  margin-top: 0.5em;
+  display: inline-block;
+  font-weight: bold;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.demo:hover {
+  color: white;
+}
+
+.link-container a:hover {
+  color: unset;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .single-card {
+    flex-direction: row;
+  }
+
+  .details {
+    max-width: 400px;
+    margin-left: 2em;
+  }
 }
