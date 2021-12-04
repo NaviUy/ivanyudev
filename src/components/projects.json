@@ -1,0 +1,56 @@
+{"projects":
+[
+    {
+        "attributes": {
+            "size": "6",
+            "imgurl": "https://camo.githubusercontent.com/3b9118d9bae71245164d63b3457600853ef9aa491ff74e9f8d545b87673f505c/68747470733a2f2f692e696d6775722e636f6d2f485951334d774c2e706e67",
+            "photoScale": ".65",
+            "positionTop": "-15"
+        },
+        "title": "Instant Photo Frame",
+        "description": "NPM component. Instant film front-end component made easy.",
+        "icons": [{
+                "href": "https://github.com/NaviUy/instantphotoframe",
+                "icon": "faGithub",
+                "size": "2x"
+            },{
+                "href": "https://www.npmjs.com/package/instantphotoframe",
+                "icon": "faNpm",
+                "size": "2x"
+            }]
+    },
+    {
+        "attributes": {
+            "size": "6",
+            "imgurl": "https://github.com/NaviUy/uvsa-spark/raw/master/demo.gif",
+            "photoScale": "3"
+        },
+        "title": "UVSA Spark",
+        "description": "Developed web application platform allowing students to interact with one another as part of the annual UVSA Summit (virtual due to pandemic).",
+        "icons": [{
+                "href": "https://github.com/NaviUy/uvsa-spark",
+                "icon": "faGithub",
+                "size": "2x"
+            },{
+                "href": "https://www.npmjs.com/package/instantphotoframe",
+                "icon": "demo"
+            }]
+    },{
+        "attributes": {
+            "size": "6",
+            "imgurl": "https://i.imgur.com/X2otIRi.png",
+            "photoScale": "3",
+            "positionTop": "50",
+            "positionLeft": "-60"
+        },
+        "title": "Smart Eye Drops",
+        "description": "Project providing doctors with useful information to adjust and improve patients eye care.",
+        "icons": [{
+                "href": "https://github.com/FengYou97/SmartEyeDrops",
+                "icon": "faGithub",
+                "size": "2x"
+            }]
+    }
+
+]
+}
