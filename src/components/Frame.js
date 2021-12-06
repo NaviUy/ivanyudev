@@ -1,9 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Polaroid } from 'instantphotoframe'
-import { faGithub, faNpm } from '@fortawesome/free-brands-svg-icons'
 import React from 'react'
 
-function Frame({ Attributes, Title, Description, Icons }) {
+function Frame({ Attributes, Title, Description, Icons, IconFunction }) {
     let { size, imgurl, photoScale, positionTop, positionLeft } = Attributes
 
     return (
@@ -17,11 +16,11 @@ function Frame({ Attributes, Title, Description, Icons }) {
                         if(icon.icon !== "demo"){
                             return (
                                 <a href={icon.href} key={index}>
-                                    <FontAwesomeIcon className="project-icon" icon={getIcon(icon.icon)} size={icon.size}/>
+                                    <FontAwesomeIcon className="project-icon" icon={IconFunction(icon.icon)} size={icon.size}/>
                                 </a>
                                 )
                         } else {
-                            return(
+                            return (
                                 <a href={icon.href} key={index}>
                                     <div className="demo">Demo</div>
                                  </a>
@@ -33,17 +32,6 @@ function Frame({ Attributes, Title, Description, Icons }) {
             </div>
         </div>
     )
-}
-
-function getIcon(icon){
-    switch(icon){
-        case "faGithub":
-            return (faGithub);
-        case "faNpm":
-            return(faNpm)
-        default:
-            return
-    }
 }
 
 export default Frame

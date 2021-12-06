@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/projects.scss'
 import Frame from './Frame'
 import json from './projects.json'
+import { getIcon } from '../utils/getIcon'
 
 function Projects(){
 
@@ -17,7 +18,7 @@ function Projects(){
 
                 {projects.map((item, index) => {
                     return (
-                        <Frame Attributes={item.attributes} Title={item.title} Description={item.description} Icons={item.icons} key={index} />
+                        <Frame Attributes={item.attributes} Title={item.title} Description={item.description} Icons={item.icons} IconFunction={getIcon} key={index} />
                     )
                 })}
 
