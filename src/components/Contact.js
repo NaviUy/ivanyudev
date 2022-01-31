@@ -26,21 +26,29 @@ function Contact(){
             <h1 className="contact-heading">Contact Me</h1>
 
             {REACT_APP_ENVIRONMENT === 'dev' ?
-                <form method="post" className='contact-form' onSubmit={handleSubmit}>
-                <div>
-                    <label className="contact-label" htmlFor="name">Name:</label>
-                    <input type="name" name="name"></input>
+                <div className="contact-form-container">
+                    <form className="contact-form" action="POST">
+                        <div className="form-group">
+                            <label for="name" className="form-label">Name</label>
+                            <input className="form-control" type="text" id="name" name="name" placeholder="name" tabindex="1" required></input>
+                        </div>
+                        <div className="form-group">
+                            <label for="email" className="form-label">Email</label>
+                            <input className="form-control" type="email" id="email" name="email" placeholder="email@domain.com" tabindex="2" required></input>
+                        </div>
+                        <div className="form-group">
+                            <label for="subject" className="form-label">Subject</label>
+                            <input className="form-control" type="text" id="subject" name="subject" placeholder="subject" tabindex="3" required></input>
+                        </div>
+                        <div className="form-group">
+                            <label for="message" className="form-label">Message</label>
+                            <textarea className="form-control" id="message" name="message" placeholder="message..." tabindex="4" required></textarea>
+                        </div>
+                        <div className="submit-container">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
                 </div>
-                <div>
-                    <label className="contact-label" htmlFor="email">Email:</label>
-                    <input type="email" name="email"></input>
-                </div>
-                <div className="message-container">
-                    <label className="contact-label" htmlFor="message">Message:</label>
-                    <input  className="contact-message" type="text" name="message"></input>
-                </div>
-                <button className="contact-submit">Send Message</button>
-            </form>
             :
             <h1>Coming soon!</h1>
         }

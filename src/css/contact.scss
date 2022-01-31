@@ -17,52 +17,28 @@
   color: white;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.contact-label {
-  color: white;
-  font-weight: bold;
-  margin: 5px;
-}
-
-.contact-message {
-  height: 10em;
-}
-
-.message-container {
-  margin-top: 2px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.contact-submit {
-  margin-top: 10px;
-  background: none;
-  color: white;
-  border: none;
-  padding: 4px;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  border: 2px solid white;
-}
-
-.contact-submit:hover {
+.contact-form-container {
+  width: 80%;
+  height: fit-content;
   background-color: white;
-  color: black;
 }
 
-.form-container {
-  margin-top: 8em;
+.contact-form {
+  margin: 1em;
+  padding-bottom: 0.5em;
 }
 
-@media screen and (min-width: 780px) {
-  .contact-form {
-    margin-top: 25%;
+.submit-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form-container {
+    margin-top: 8em;
+  }
+
+  .contact-form-container {
+    max-width: 30em;
   }
 }
