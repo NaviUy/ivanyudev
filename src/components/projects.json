@@ -22,6 +22,26 @@
     {
         "attributes": {
             "size": "6",
+            "imgurl": "https://i.imgur.com/dVDnQ8F.png",
+            "photoScale": "2",
+            "positionTop": "-15",
+            "positionLeft": "-78"
+        },
+        "title": "Timesheet Calculator",
+        "description": "An application that was created out of necessity for calculating hours on a timesheet and generating a pdf invoice.",
+        "icons": [{
+                "href": "https://github.com/NaviUy/timesheet-calculator",
+                "icon": "faGithub",
+                "size": "2x"
+            },{
+                "href": "https://timesheet.ivanyu.dev",
+                "icon": "live",
+                "size": "2x"
+            }]
+    },
+    {
+        "attributes": {
+            "size": "6",
             "imgurl": "https://github.com/NaviUy/uvsa-spark/raw/master/demo.gif",
             "photoScale": "3"
         },

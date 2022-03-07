@@ -8,18 +8,18 @@ function Contact(){
         const url = "https://xtbv5fa0w8.execute-api.us-east-1.amazonaws.com/prod/porfolio-message"
         const request = new Request(url)
         fetch(request).then(res => {
-            console.log(res)
+            // console.log(res)
         })
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        const formData = {}
-        Array.from(e.currentTarget.elements).forEach(field =>{
-            if(!field.name){ return };
-            formData[field.name] = field.value
-        })
-        sendMessage()
+        // e.preventDefault();
+        // const formData = {}
+        // Array.from(e.currentTarget.elements).forEach(field =>{
+        //     if(!field.name){ return };
+        //     formData[field.name] = field.value
+        // })
+        // sendMessage()
     }
     return(
         <div className="contact-container" id="contact">
@@ -29,20 +29,20 @@ function Contact(){
                 <div className="contact-form-container">
                     <form className="contact-form" action="POST">
                         <div className="form-group">
-                            <label for="name" className="form-label">Name</label>
-                            <input className="form-control" type="text" id="name" name="name" placeholder="name" tabindex="1" required></input>
+                            <label id="name" className="form-label">Name</label>
+                            <input className="form-control" type="text" id="name" name="name" placeholder="name" tabIndex="1" required></input>
                         </div>
                         <div className="form-group">
-                            <label for="email" className="form-label">Email</label>
-                            <input className="form-control" type="email" id="email" name="email" placeholder="email@domain.com" tabindex="2" required></input>
+                            <label id="email" className="form-label">Email</label>
+                            <input className="form-control" type="email" id="email" name="email" placeholder="email@domain.com" tabIndex="2" required></input>
                         </div>
                         <div className="form-group">
-                            <label for="subject" className="form-label">Subject</label>
-                            <input className="form-control" type="text" id="subject" name="subject" placeholder="subject" tabindex="3" required></input>
+                            <label id="subject" className="form-label">Subject</label>
+                            <input className="form-control" type="text" id="subject" name="subject" placeholder="subject" tabIndex="3" required></input>
                         </div>
                         <div className="form-group">
-                            <label for="message" className="form-label">Message</label>
-                            <textarea className="form-control" id="message" name="message" placeholder="message..." tabindex="4" required></textarea>
+                            <label id="message" className="form-label">Message</label>
+                            <textarea className="form-control" id="message" name="message" placeholder="message..." tabIndex="4" required></textarea>
                         </div>
                         <div className="submit-container">
                             <button type="submit">Send Message</button>

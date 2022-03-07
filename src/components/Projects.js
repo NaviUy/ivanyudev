@@ -17,6 +17,7 @@ function Projects(){
             <div className="all-cards">
 
                 {projects.map((item, index) => {
+                    // console.log(item.icons)
                     return (
                         <Frame Attributes={item.attributes} Title={item.title} Description={item.description} Icons={item.icons} IconFunction={getIcon} key={index} />
                     )

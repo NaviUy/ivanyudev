@@ -13,18 +13,32 @@ function Frame({ Attributes, Title, Description, Icons, IconFunction }) {
                 <div className="single-card-description">{Description}</div>
                 <div className="link-container">
                     {Icons.map((icon, index) => {
-                        if(icon.icon !== "demo"){
+                        if(icon.icon !== "demo" && icon.icon !== "live"){
                             return (
                                 <a href={icon.href} key={index}>
                                     <FontAwesomeIcon className="project-icon" icon={IconFunction(icon.icon)} size={icon.size}/>
                                 </a>
                                 )
                         } else {
-                            return (
-                                <a href={icon.href} key={index}>
-                                    <div className="demo">Demo</div>
-                                 </a>
-                            )
+                            switch(icon.icon){
+                                case "demo":
+                                    return (
+                                        <a href={icon.href} key={index}>
+                                            <div className="demo">Demo</div>
+                                        </a>
+                                    )
+                                case "live":
+                                    return (
+                                        <a href={icon.href} key={index}>
+                                            <div className="demo">Live</div>
+                                        </a>
+                                    )
+                                default:
+                                    return (
+                                        <div></div>
+                                    )
+                            }
+
                         }
 
                     })}
